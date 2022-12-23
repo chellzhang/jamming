@@ -6,21 +6,16 @@ class TrackList extends React.Component {
     render() {
         return (
             <div className="TrackList">
-                <Track />
-
-                <h2>{this.props.tracks}</h2> 
-                {/* this works */}
-
-                {/* Cannot get this.props.tracks to work like an array. Codes below will cause the entire page not render... */}
-
-                {/* <h2>{this.props.tracks.length}</h2> */}
-
-                {/* {
-                    this.props.tracks.map(track =>{
-                        return <h2>{track}</h2>
+                {
+                    this.props.tracks.map(track => {
+                        return <Track 
+                            key={track.id} 
+                            track={track} 
+                            onAdd={this.props.onAdd} 
+                            onRemove={this.props.onRemove}
+                            isRemoval={this.props.isRemoval}/>
                     })
-                } */}
-
+                }                
             </div>
         )
     }
