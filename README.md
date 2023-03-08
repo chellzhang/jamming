@@ -21,5 +21,4 @@ npm install
 ```
 ## The Spotify-api
 
-The application makes requests to the Spotify api. 
-To run the api server follow the instructions in the scheduler-api https://github.com/lighthouse-labs/scheduler-api. 
+The application makes requests to the Spotify api. More on the development guides can be found here: https://developer.spotify.com/documentation/general/guides/
