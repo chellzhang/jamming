@@ -1,5 +1,5 @@
 const clientID = '5331a0eaf1db404a8fe9e6002ad35469';
-const redirectURI = 'http://localhost:3000/'
+const redirectURI = 'http://berryberry-jam.surge.sh'
 
 let spotifyToken;
 
